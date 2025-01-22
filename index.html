@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gourmet Recipe Collection</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Gourmet Recipe Collection</div>
+            <div class="search-bar">
+                <input type="text" id="searchInput" placeholder="Search recipes...">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+            <div class="categories">
+                <button class="category-btn active" data-category="all">All</button>
+                <button class="category-btn" data-category="appetizers">Appetizers</button>
+                <button class="category-btn" data-category="pasta">Pasta</button>
+                <button class="category-btn" data-category="beef">Beef</button>
+                <button class="category-btn" data-category="chicken">Chicken</button>
+                <button class="category-btn" data-category="seafood">Seafood</button>
+                <button class="category-btn" data-category="pork">Pork</button>
+                <button class="category-btn" data-category="lamb">Lamb</button>
+                <button class="category-btn" data-category="sides">Sides</button>
+                <button class="category-btn" data-category="vegetarian">Vegetarian</button>
+                <button class="category-btn" data-category="asian">Asian</button>
+                <button class="category-btn" data-category="italian">Italian</button>
+                <button class="category-btn" data-category="mexican">Mexican</button>
+                <button class="category-btn" data-category="indian">Indian</button>
+                <button class="category-btn" data-category="middle-eastern">Middle Eastern</button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="recipe-grid" id="recipeGrid">
+            <!-- Recipes will be dynamically inserted here -->
+        </div>
+    </main>
+
+    <div id="recipeModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="modalContent"></div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Gourmet Recipe Collection. All rights reserved.</p>
+    </footer>
+
+    <script src="recipes.js"></script>
+    <script src="script.js"></script>
+</body>
+</html> 
